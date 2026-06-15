@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Cadastro de Clientes</header>
-    <input type="text" id="cliente" placeholder="Nome">
-    <input type="text" id="email" placeholder="Email">
-    <button>Cadastrar</button>
-    <p>Clientes cadastrados:</p>
+    <form>
+        <header>Cadastro de Clientes</header>
+        <input type="text" id="cliente" placeholder="Nome">
+        <input type="email" id="email" placeholder="Email">
+            
+        <button type="button" id="add">Cadastrar</button>
+    </form>
+
+        <h2>Clientes cadastrados</h2>
+        <ul id="listaClientes">
+            
+        </ul>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
