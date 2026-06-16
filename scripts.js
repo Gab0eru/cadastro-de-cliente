@@ -1,7 +1,7 @@
 //Seliciona a lista no HTML para implementar a variavael no postman
 const listaClientes = document.getElementById("listaClientes")
 
-fetch("https://crudcrud.com/api/54d810a84a60451a8242102c46085398/cadastrados")
+fetch("https://crudcrud.com/api/2e0e0c0d097f4326a6665a486d3957e3/cadastrados")
 .then(resposta => resposta.json())
 .then((listaCliente)=>{
     listaCliente.forEach(cliente => {
@@ -15,7 +15,7 @@ const add = document.getElementById("add").addEventListener("click", () =>{
     const nome = document.getElementById("cliente").value;
     const ecorreio = document.getElementById("email").value;
 
-    fetch("https://crudcrud.com/api/54d810a84a60451a8242102c46085398/cadastrados", {
+    fetch("https://crudcrud.com/api/2e0e0c0d097f4326a6665a486d3957e3/cadastrados", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
@@ -32,7 +32,7 @@ const add = document.getElementById("add").addEventListener("click", () =>{
 })
 
 function deletaCliente(id, botao){
-    fetch(`https://crudcrud.com/api/54d810a84a60451a8242102c46085398/cadastrados/${id}`,{
+    fetch(`https://crudcrud.com/api/2e0e0c0d097f4326a6665a486d3957e3/cadastrados/${id}`,{
         method: "DELETE"
     })
 .then(()=>{

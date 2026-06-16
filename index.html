@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <form>
-            <header>Cadastro de Clientes</header>
-            <p>Nome:</p>
-            <input type="text" id="cliente">
-            <p>Email:</p>
-            <input type="text" id="email">
+    <div class="container">
+        <section class="formulario">
+            <form>
+                <header>Cadastro de Clientes</header>
+                <p>Nome:</p>
+                <input type="text" id="cliente">
+                <p>Email:</p>
+                <input type="text" id="email">
             
-            <button type="button" id="add">Cadastrar</button>
-        </form>
+                <button type="button" id="add">Cadastrar</button>
+            </form>
+        </section>
 
-        <h2>Clientes cadastrados</h2>
-        <ul id="listaClientes">
+        <section class="lista">
+            <h2>Clientes cadastrados:</h2>
+            <ul id="listaClientes">
             
-        </ul>
+            </ul>
+        </section>
     </div>
     <script src="scripts.js"></script>
 </body>
